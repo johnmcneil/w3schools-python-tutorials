@@ -178,29 +178,6 @@ x = memoryview(bytes(5))
 x = memoryview(bytes(5))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Numbers
+# Float can be scientifice with an e to indicate the power of 10
+z = -87.7e100
