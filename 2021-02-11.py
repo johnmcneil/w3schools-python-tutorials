@@ -113,6 +113,3 @@ print(isinstance(x, int))
 
 
 
-
-
-
