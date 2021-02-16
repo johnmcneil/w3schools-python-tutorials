@@ -2,6 +2,8 @@
 # are store multiple items in a single variable
 # are one of four built-in data types in Python used to store collections
 # of information.
+
+
 # list: ordered, changeable, duplicates allowed
 # tuple: ordered, unchangeable, duplicates allowed
 # set: unordered, unindexed, no duplicates.
