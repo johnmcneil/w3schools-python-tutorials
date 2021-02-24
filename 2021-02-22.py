@@ -66,9 +66,60 @@ def my_function(**kid):
 my_function(fname="Tobias", lname="Refsnes")
 
 
+# default parameter value
+# if you call a function without an argument, it uses the default value
+def my_function(country="Norway"):
+    print("I am from " + country)
 
 
+my_function("Sweden")
+my_function("India")
+my_function()
+my_function("Brazil")
 
+
+# passing a list as an argument
+# you can pass any data type to a function, e.g. a list
+def my_function(food):
+    for x in food:
+        print(x)
+
+
+fruits = ["apple", "banana", "cherry"]
+
+my_function(fruits)
+
+
+# to let a function return a value, use the return statement
+def my_function(x):
+    return 5 * x
+
+
+print(my_function(3))
+print(my_function(5))
+
+
+# pass statement
+# functions can't be empty. if you have a function with no content,
+# use pass statement to avoid an error.
+def my_function():
+    pass
+
+
+# recursion
+# python accepts function recursion
+# meaning a defined function can call itself
+def tri_recursion(k):
+    if(k > 0):
+        result = k + tri_recursion(k - 1)
+        print(result)
+    else:
+        result = 0
+    return result
+
+
+print("\nRecursion Example Results")
+tri_recursion(6)
 
 
 
