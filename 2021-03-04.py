@@ -66,11 +66,75 @@ print(x, y, z, a)
 
 # math module
 import math
-    x = math.sqrt(64)
+x = math.sqrt(64)
 print(x)
 print(math.ceil(5.5))
 print(math.floor(5.5))
 print(math.pi)
+
+
+# python JSON
+# python has a built-in package called json
+import json
+
+
+# json.loads() method
+x = '{ "name":"John", "age":30, "city":"New York"}'
+y = json.loads(x)
+
+# result is a Python dictionary
+print(y["age"])
+
+
+# convert from python to json
+# a python dictionary
+x = {
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+}
+
+# convert into JSON
+y = json.dumps(x)
+
+print(y)
+
+
+# convert a python object containing all legal data types
+x = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann", "Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+
+print(json.dumps(x))
+
+# indent parameter makes it easier to read
+print(json.dumps(x, indent=4))
+
+
+# you can change the default separators
+print(json.dumps(x, indent=4, separators=(". ", " = ")))
+
+# you can sort the result
+print(json.dumps(x, indent=4, sort_keys=True))
+
+
+
+
+
+
+
+
+
+
 
 
 
