@@ -56,7 +56,6 @@ mymin = minimize(eqn, 0, method='COBYLA')
 print(mymin)
 
 
-
 # sparse data
 import numpy as np
 from scipy.sparse import csr_matrix
