@@ -17,6 +17,8 @@ print(type(z))
 # you can use single or double quotes
 
 # variables
+
+
 # variable names are case-sensitive.
 # must start with a letter or the underscore character
 # cannot start with a number
