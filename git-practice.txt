@@ -4,3 +4,11 @@ git commit
 git status
 git log --oneline
 git checkout
+get reset HEAD filename
+
+say you checkout the version of a file from a previous commit.
+if you want to go back to the later version, 
+you can do
+git reset HEAD filename
+and then checkout the file again. it will be from the latest commit.
+git checkout filename
