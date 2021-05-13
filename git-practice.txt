@@ -1,0 +1,5 @@
+practicing git commands.
+git add
+git commit
+git status
+git log --oneline
